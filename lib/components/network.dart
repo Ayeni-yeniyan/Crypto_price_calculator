@@ -42,7 +42,7 @@ Future getCurrentCoinPrice(String currency) async {
         coinIcon: coinData.icon,
         coinName: coinData.name,
         coinSymbol: coinData.nameAbbr,
-        currentPrice: '${NumberFormat('#.0##').format(coinPrice)} $currency',
+        currentPrice: '${NumberFormat('0.##').format(coinPrice)} $currency',
       );
       customContainerList.add(newCustomContainer);
     } else {
